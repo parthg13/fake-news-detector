@@ -10,9 +10,8 @@ scikit-learn==0.22.1
 matplotlib>=1.4.3
 pandas>=0.19
 joblib==0.14.1
-Image==7.1.2
 streamlit
-
+pillow>=7.1.2
 
 
 
