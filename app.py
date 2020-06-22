@@ -16,9 +16,9 @@ from joblib import load
 import streamlit as st
 from PIL import Image
 
-pipeline = load("F:/CMS Sem 4/NLP_based_fake_news_detector/final_sem_project/text_classification.joblib")
-fake = Image.open("F:/CMS Sem 4/NLP_based_fake_news_detector/final_sem_project/FAKE.png")
-real = Image.open("F:/CMS Sem 4/NLP_based_fake_news_detector/final_sem_project/REAL.png")
+pipeline = load("./text_classification.joblib")
+fake = Image.open("./FAKE.png")
+real = Image.open("./REAL.png")
 
 def create_corpus(text):
     review = re.sub('[^a-zA-Z]', ' ',text)
